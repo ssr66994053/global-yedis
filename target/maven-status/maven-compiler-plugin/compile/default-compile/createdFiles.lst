@@ -8,6 +8,7 @@ com\global\framework\yedis\YedisTemplate.class
 com\global\framework\yedis\YedisUtil.class
 com\global\framework\yedis\support\YedisCache$2.class
 com\global\framework\yedis\support\YedisCache.class
+com\global\framework\yedis\support\YedisStringKeySerializer.class
 com\global\framework\yedis\support\YedisSerializer.class
 com\global\framework\yedis\support\YedisCache$1.class
 com\global\framework\yedis\support\YedisCacheManager.class

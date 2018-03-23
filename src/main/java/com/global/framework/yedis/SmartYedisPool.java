@@ -4,9 +4,9 @@
  */
 
 /*
- * 淇璁板綍:
- * zhouxi@yiji.com 2014-12-24 11:36 鍒涘缓
- * 鑳介�杩囬厤缃鐞嗙郴缁焗era鍔ㄦ�鐨勮皟鏁磋繛鎺ユ睜澶у皬
+ * 修订记录:
+ * zhouxi@yiji.com 2014-12-24 11:36 创建
+ * 能通过配置管理系统hera动态的调整连接池大小
  *
  */
 package com.global.framework.yedis;
