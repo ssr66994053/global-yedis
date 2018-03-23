@@ -234,6 +234,17 @@ public class YedisConnectionFactory implements InitializingBean, DisposableBean,
 		return postProcessConnection(connection);
 	}
 	
+	
+	public JedisConnection getConnectionWithoutNS() {
+		Jedis jedis = fetchJedisConnector();
+		YedisConnection connection = (usePool ? new YedisConnection(jedis, pool, dbIndex)
+			: new YedisConnection(jedis, null, dbIndex));
+		connection.setConvertPipelineAndTxResults(convertPipelineAndTxResults);
+		return postProcessConnection(connection);
+	}
+	
+	
+	
 	/*
 	 * (non-Javadoc)
 	 * @see org.springframework.dao.support.PersistenceExceptionTranslator#translateExceptionIfPossible(java.lang.RuntimeException)

@@ -50,6 +50,11 @@ public class YedisConnection extends JedisConnection {
         }
         this.namespace = namespace.getBytes() ;
     }
+    
+    public YedisConnection(Jedis jedis, Pool<Jedis> pool, int dbIndex) {
+		super(jedis, pool, dbIndex);
+	}
+    
 
     public YedisConnection(Jedis jedis, Pool<Jedis> pool, int dbIndex,String namespace) {
         super(jedis, pool, dbIndex);
