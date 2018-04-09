@@ -11,7 +11,7 @@
     </parent>
     <groupId>com.global.framework</groupId>
     <artifactId>global-yedis</artifactId>
-    <version>2.0.3</version>
+    <version>2.0.3-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>对jedis的轻度封装，添加namespace支持，防止冲突</description>
 
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
-            <version>2.6.0</version>
+            <version>2.7.3</version>
         </dependency>
     <dependency>
         <groupId>com.esotericsoftware</groupId>

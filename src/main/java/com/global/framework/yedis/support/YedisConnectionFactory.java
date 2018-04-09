@@ -165,7 +165,7 @@ public class YedisConnectionFactory implements InitializingBean, DisposableBean,
 			}
 			
 			if (timeout > 0) {
-				shardInfo.setTimeout(timeout);
+				shardInfo.setSoTimeout(timeout);
 			}
 		}
 		
@@ -193,7 +193,7 @@ public class YedisConnectionFactory implements InitializingBean, DisposableBean,
 		return new JedisSentinelPool(config.getMaster().getName(),
 			convertToJedisSentinelSet(config.getSentinels()),
 			getPoolConfig() != null ? getPoolConfig() : new JedisPoolConfig(), getShardInfo()
-				.getTimeout(), getShardInfo().getPassword());
+				.getSoTimeout(), getShardInfo().getPassword());
 	}
 	
 	/**
@@ -204,7 +204,7 @@ public class YedisConnectionFactory implements InitializingBean, DisposableBean,
 	 */
 	protected Pool<Jedis> createRedisPool() {
 		return new JedisPool(getPoolConfig(), getShardInfo().getHost(), getShardInfo().getPort(),
-			getShardInfo().getTimeout(), getShardInfo().getPassword());
+			getShardInfo().getSoTimeout(), getShardInfo().getPassword());
 	}
 	
 	/*
