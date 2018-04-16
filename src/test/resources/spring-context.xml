@@ -26,7 +26,7 @@
 	<bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
 		<property name="connectionFactory" ref="jedisConnectionFactory"/>
 		<property name="defaultSerializer" >
-			<bean class="com.yiji.framework.yedis.support.YedisSerializer"/>
+			<bean class="com.global.framework.yedis.support.YedisSerializer"/>
 		</property>
 	</bean>
 	<bean id="cacheManager" class="com.global.framework.yedis.support.YedisCacheManager">
