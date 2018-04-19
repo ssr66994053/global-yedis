@@ -14,7 +14,7 @@ import com.global.framework.yedis.SmartYedisPool;
 import com.global.framework.yedis.Yedis;
 import com.global.framework.yedis.YedisTemplate;
 import com.global.framework.yedis.YedisUtil;
-import com.yjf.common.kryo.Kryos;
+import com.global.common.kryo.Kryos;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;

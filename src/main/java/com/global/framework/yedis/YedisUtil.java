@@ -14,7 +14,7 @@ package com.global.framework.yedis;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
-import com.yjf.common.kryo.Kryos;
+import com.global.common.kryo.Kryos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
